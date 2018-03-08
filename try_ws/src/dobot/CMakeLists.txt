@@ -225,13 +225,13 @@ add_executable(DobotServer src/DobotServer.cpp)
 target_link_libraries(DobotServer ${catkin_LIBRARIES} DobotDll "${QT_CORE}")
 add_dependencies(DobotServer dobot_gencpp)
 
-add_executable(DobotClient_JOG src/DobotClient_JOG.cpp)
-target_link_libraries(DobotClient_JOG ${catkin_LIBRARIES})
-add_dependencies(DobotClient_JOG dobot_gencpp)
+# add_executable(DobotClient_JOG src/DobotClient_JOG.cpp)
+# target_link_libraries(DobotClient_JOG ${catkin_LIBRARIES})
+# add_dependencies(DobotClient_JOG dobot_gencpp)
 
-add_executable(DobotClient_PTP src/DobotClient_PTP.cpp)
-target_link_libraries(DobotClient_PTP ${catkin_LIBRARIES})
-add_dependencies(DobotClient_PTP dobot_gencpp)
+# add_executable(DobotClient_PTP src/DobotClient_PTP.cpp)
+# target_link_libraries(DobotClient_PTP ${catkin_LIBRARIES})
+# add_dependencies(DobotClient_PTP dobot_gencpp)
 
 add_executable(DobotClient_step src/DobotClient_step.cpp)
 target_link_libraries(DobotClient_step ${catkin_LIBRARIES} DobotDll "${QT_CORE}")
@@ -249,9 +249,9 @@ add_executable(DobotColor src/DobotColor.cpp)
 target_link_libraries(DobotColor ${catkin_LIBRARIES} DobotDll "${QT_CORE}")
 add_dependencies(DobotColor dobot_gencpp)
 
-#add_executable(Subscriber src/Subscriber.cpp)
-#target_link_libraries(Subscriber ${catkin_LIBRARIES})
-#add_dependencies(Subscriber dobot_gencpp)
+# add_executable(Subscriber src/Subscriber.cpp)
+# target_link_libraries(Subscriber ${catkin_LIBRARIES})
+# add_dependencies(Subscriber dobot_gencpp)
 
 # add -fpic option, otherwise fail
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fpic")
