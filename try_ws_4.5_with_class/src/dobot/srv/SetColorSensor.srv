@@ -1,4 +1,0 @@
-bool enable
-uint8 colorPort
----
-int32 result
