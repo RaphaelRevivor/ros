@@ -1,5 +1,8 @@
 # ros
 
+# try_ws_4.5_with_class
+# with classes
+
 # try_ws:
 # All service functions are defined in DobotServer.cpp. DobotPublisher.cpp and DobotColor.cpp call the service function to get the sensor readings, and publish to DobotClient_step.cpp (main file).
 # 1. DobotServer.cpp: all the service function are defined here.
